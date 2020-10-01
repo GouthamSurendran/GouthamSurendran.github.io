@@ -128,18 +128,27 @@ img {
 
 @media screen and (max-width: 620px) {
     .navBar li a.toggler {
-      display: block;
+      position: sticky;
+      right: 10px;
+      top: 0;
+      display: inline-block;
     }
     .navBar li:not(:last-child) {display: none;}
   }
 
   
 @media screen and (max-width: 620px) {
-    .navBar.responsive {position: relative;}
+    .navBar.responsive {
+      position: sticky;
+    }
     .navBar.responsive .toggler {
       position: absolute;
       right: 0px;
       top: 0;
+    }
+    .navBrand {
+      font-size: large;
+      font-weight: 500;
     }
     .navBar.responsive li{
         float: none;
