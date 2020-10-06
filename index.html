@@ -19,7 +19,7 @@
 				<li class="navItem"><a class="navUL" href="./about.html">About</a></li>
 				<li class="navItem"><a class="navUL" href="/projects">Projects</a></li>
 				<li class="navItem"><a class="navUL" href="/blog">Blog</a></li>
-				<li class="menu-icon"><a href="javascript:void(0);" class="toggler" onclick="toggle()">
+				<li><a href="javascript:void(0);" class="toggler" onclick="toggle()">
 						<i class="fa fa-bars"></i>
 					</a></li>
 			</ul>
@@ -71,6 +71,17 @@
 			} else {
 				x.className = "navBar";
 			}
+		}
+		var prevPos = window.pageYOffset;
+		window.onscroll = function () {
+			var currPos = window.pageYOffset;
+			if (currPos > prevPos) {
+				document.getElementById("myTopNav").style.display = "none";
+			}
+			else {
+				document.getElementById("myTopNav").style.display = "initial";
+			}
+			prevPos = currPos;
 		}
 	</script>
 </body>
