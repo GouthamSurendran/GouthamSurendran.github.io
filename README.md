@@ -1,2 +1,3 @@
 # GouthamSurendran.github.io
-Template for building upon personal blog.
+
+Design and implementation from scratch , No template used.
