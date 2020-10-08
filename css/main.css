@@ -129,39 +129,14 @@ h1{
 }
 
 .flex-container {
+    padding-top: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.cardArea {
-  margin-top: 150px;
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 20%;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#cardContainer {
-  padding: 2px 16px;
-  max-height: 10px;
+    justify-content: space-evenly;
 }
 
 .card1 {
   background-color: #fff;
-  margin-top: 150px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 20%;
@@ -183,34 +158,23 @@ h1{
   justify-content: center;
 }
 
-img {
-  border-radius: 5px 5px 0 0;
-  position: sticky;
-  display: flex;
-  object-fit: cover;
-  transition: all 0.2s linear;
-}
-
-img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 /* About Page */
-
 .avatar {
   display: flex;
+  position: sticky;
+  object-fit: cover;
   vertical-align: middle;
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  transition: all 0.2s linear;
 }
 
-.container {
-  background-color: #fff;
-  max-height: 10px;
-  /* padding: 30px 100px; */
+.avatar:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
+
 
 .containerA {
   background-color: #fff;
@@ -292,21 +256,6 @@ img:hover {
 
     .effect1 {
       font-size: 30px;
-    }
-
-    .cardArea {
-      float: none;
-      display: block;
-      margin-left: 50px;
-    }
-
-    .card {
-      margin-bottom: 100px;
-      width: 90%;
-    }
-
-    #cardContainer {
-      max-height: 130px;
     }
 
     .card1 {
