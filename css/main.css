@@ -231,11 +231,7 @@ h1{
       width: 100%;
       justify-content: space-between;
     }
-
-    .navBar.responsive {
-      position: fixed;
-      display: flex;
-    }
+    
     .navBar.responsive .toggler {
       position: absolute;
       right: 20px;
