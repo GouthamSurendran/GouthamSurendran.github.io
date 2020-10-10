@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
-    <nav class="navBar transition: all 1s;" id="myTopNav">
+<body class="bg">
+    <nav class="navBar" id="myTopNav">
         <div class="navbar-container">
             <div class="navBrand">
                 <a href="./index.html">GS</a>
@@ -17,11 +17,13 @@
             <ul class="navMenu">
                 <li class="navItem"><a class="navUL" href="./index.html">Home</a></li>
                 <li class="navItem"><a class="navUL" href="./about.html">About</a></li>
-                <li class="navItem"><a class="navUL" href="./projects.html">Projects</a></li>
-                <li class="navItem"><a class="navUL selected_tab" href="./blog.html">Blog</a></li>
-                <li><a href="javascript:void(0);" class="toggler" onclick="toggle()">
+                <li class="navItem"><a class="navUL selected_tab" href="./projects.html">Projects</a></li>
+                <li class="navItem"><a class="navUL" href="./blog.html">Blog</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="toggler" onclick="toggle()">
                         <i class="fa fa-bars"></i>
-                    </a></li>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -29,22 +31,22 @@
         <div class="card">
             <img src="images/js.png" alt="JS" style="width: 100%; height: 60%;">
             <div class="container" id="cardContainer">
-                <h4><b>Javascript</b></h4>
-                <p>Is Javascript going to take over the world ?</p>
+                <h4><b>Library Manager</b></h4>
+                <p>Library Management System made for DBMS</p>
             </div>
         </div>
         <div class="card">
-            <img src="images/img-7.jpg" alt="JS" style="width: 100%; height: 60%;">
+            <img src="images/js.png" alt="JS" style="width: 100%; height: 60%;">
             <div class="container" id="cardContainer">
-                <h4><b>Have a dream?</b></h4>
-                <p>We'll guide you to achieve your dream.</p>
+                <h4><b>EEE Project</b></h4>
+                <p>LED blinks when you scream at it</p>
             </div>
         </div>
         <div class="card">
-            <img src="images/img-4.jpg" alt="JS" style="width: 100%; height: 60%;">
+            <img src="images/js.png" alt="JS" style="width: 100%; height: 60%;">
             <div class="container" id="cardContainer">
-                <h4><b>A random picture</b></h4>
-                <p>Because, why not ?</p>
+                <h4><b>That ML Project</b></h4>
+                <p>ML Project</p>
             </div>
         </div>
     </div>
@@ -58,13 +60,13 @@
                 x.className = "navBar";
             }
         }
+
         var prevPos = window.pageYOffset;
-        window.onscroll = function () {
+        window.onscroll = function() {
             var currPos = window.pageYOffset;
             if (currPos > prevPos) {
                 document.getElementById("myTopNav").style.display = "none";
-            }
-            else {
+            } else {
                 document.getElementById("myTopNav").style.display = "initial";
             }
             prevPos = currPos;
