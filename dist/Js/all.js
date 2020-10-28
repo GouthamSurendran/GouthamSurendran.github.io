@@ -1,0 +1,2 @@
+function toggle(){var e=document.getElementById("myTopNav");"navBar"===e.className?e.className+=" responsive":e.className="navBar"}var prevPos=window.pageYOffset;window.onscroll=function(){var e=window.pageYOffset;if(e>prevPos)document.getElementById("myTopNav").style.display="none";else{var a=document.getElementById("myTopNav");"navBar responsive"==a.className&&(a.className="navBar"),document.getElementById("myTopNav").style.display="initial"}prevPos=e};
+//# sourceMappingURL=all.js.map

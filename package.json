@@ -1,0 +1,30 @@
+{
+  "name": "blogpage",
+  "version": "1.0.0",
+  "description": "Design and implementation from scratch , No template used.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GouthamSurendran/GouthamSurendran.github.io.git"
+  },
+  "author": "Goutham Surendran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GouthamSurendran/GouthamSurendran.github.io/issues"
+  },
+  "homepage": "https://github.com/GouthamSurendran/GouthamSurendran.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.0",
+    "postcss": "^8.1.4"
+  }
+}
