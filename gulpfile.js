@@ -31,11 +31,11 @@ function cssTask() {
     .pipe(concat('style.css')) 
     .pipe(postcss([autoprefixer(),cssnano()]))         
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('dist/css'))
+    .pipe(dest('dist/css'));
 }
 
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
 exports.imgTask = imgTask;
-exports.copyHtml = copyHtml
-exports.default = parallel(imgTask,copyHtml);
+exports.copyHtml = copyHtml;
+exports.default = parallel(imgTask);
