@@ -4,8 +4,10 @@
 <head>
 	<title>GouthamSurendran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 
 <body>
@@ -26,7 +28,72 @@
 		</div>
 	</nav>
 
+	<div class="container">
+		<div class="row slider">
+			<!-- Slider -->
+			<!-- <div class="column">
+				<i class="fa fa-chevron-left" style="margin: 100px 50px;"></i>
+			</div> -->
+			<div class="column">
+				<img src="images/img-4.jpg" alt="" />
+			</div>
+			<div class="column">
+				<img src="images/download.png" alt="" />
+			</div>
+			<div class="column">
+				<img src="images/js.png" alt="" />
+			</div>
+			<div class="column">
+				<img src="images/Slider.jpg" alt="" />
+			</div>
+			<div class="column">
+				<img src="images/img-7.jpg" alt="" />
+			</div>
+			<!-- <div class="column">
+				<i class="fa fa-chevron-right" style="margin: 100px 50px;"></i>
+			</div> -->
+		</div>
+		<div class="row">
+			<div class="slider-dots">
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://use.fontawesome.com/8a1f4f3931.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="./dist/Js/all.js">
+	</script>
+	<script>var slider = tns({
+			container: '.slider',
+			items: 1,
+			slideBy: 'page',
+			autoplay: true,
+			autoplayButtonOutput: false,
+			loop: false,
+			controls: false,
+			navContainer: ".slider-dots",
+			mouseDrag: 'true',
+			loop: 'true',
+			responsive: {
+				640: {
+					edgePadding: 20,
+					gutter: 20,
+					items: 2
+				},
+				700: {
+					gutter: 30
+				},
+				900: {
+					items: 2
+				}
+
+			}
+		});
 	</script>
 </body>
 

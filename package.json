@@ -26,5 +26,9 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.4.0",
     "postcss": "^8.1.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "tiny-slider": "^2.9.3"
   }
 }

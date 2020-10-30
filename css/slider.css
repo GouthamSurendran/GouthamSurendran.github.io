@@ -1,0 +1,47 @@
+.container {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+img {
+    height: 250px;
+    width: 250px; 
+    border-radius: 10px;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.slider-dots button {
+    margin-top: 30px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: lightgray;
+    border-width: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .slider-dots button:first-child {
+    margin-left: 0;
+  }
+  .slider-dots button:last-child {
+    margin-right: 0;
+  }
+  .slider-dots button.tns-nav-active {
+    background-color: #9ECEE3;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+  }
