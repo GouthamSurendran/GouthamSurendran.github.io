@@ -17,7 +17,8 @@ img {
     border-radius: 10px 10px 0px 0px;
     box-shadow: 1px 1px 2px rgba(38, 44, 46, 0.253);
 }
-img:hover + .cardb{
+img:hover {
+  transform: scale(1.1);
   box-shadow: 0px 5px 15px rgba(147, 201, 224, 0.9);
 }
 
@@ -31,23 +32,10 @@ a:hover {
 } 
 
 .cardb {
-  width: 285px;
-  padding: 5px 10px;
-  margin: 1px auto;
-  margin-top: -3px;
   z-index: 999;
   border-radius: 0px 0px 10px 10px;
-  box-shadow: 1px 1px 2px rgba(38, 44, 46, 0.253);
 }
 
-.cardb:hover {
-  box-shadow: 0px 5px 15px rgba(147, 201, 224, 0.9);
-}
-
-.slider {
-  display: inherit;
-  position: relative;
-}
 .slider-dots button {
     margin-top: 30px;
     cursor: pointer;
