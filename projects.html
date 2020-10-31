@@ -4,8 +4,10 @@
 <head>
 	<title>GouthamSurendran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 
 <body>
@@ -26,7 +28,111 @@
 		</div>
 	</nav>
 
+	<div class="container">
+		<!-- <div class="">
+			<i class="fa fa-chevron-left" id='left'></i>
+		</div> -->
+		<div class="slider">
+			<!-- Slider -->
+			<div>
+				<img src="images/demo.png" alt="" />
+				<div class="cardb" id='p1'>
+					<h4>Todo List</h4>
+					<p>Simple todo list with CRUD operations. PostgreSQL for backend</p>
+					<a href="https://github.com/GouthamSurendran/Todo-List-Postgresql-NodeJS" target="none">
+						<!-- <i
+							class="fa fa-github" style="font-size: 1.75em;"></i> -->
+							Go to Github
+						</a>
+				</div>
+			</div>
+			<div>
+				<img src="images/socio.PNG" alt="" />
+				<div class="cardb">
+					<h4>Socio</h4>
+					<p>A Social Network Web app. Created with MeteorJS and Mongodb</p>
+					<a href="https://github.com/GouthamSurendran/Social-Network-App-MeteorJS" target="none">
+							Go to Github
+						</a>
+				</div>
+			</div>
+			<div>
+				<img src="images/space.png" alt="" />
+				<div class="cardb">
+					<h4>Space Invaders</h4>
+					<p>Recreation of the arcade game using Python library Pygame.</p>
+					<a href="https://github.com/GouthamSurendran/Space-Invaders" target="none">
+						Go to Github
+					</a>
+				</div>
+			</div>
+			<div>
+				<img src="images/reactp.PNG" alt="" />
+				<div class="cardb">
+					<h4>Responsive layout using React</h4>
+					<p>Created using ReactJS and React Hooks for state management</p>
+					<a href="https://responsive-react-layout.netlify.app/" target="none">
+						See Live Preview
+					</a>
+					<br></br>
+					<a href="https://github.com/GouthamSurendran/React-Hooks-and-Styling-Template">Go to Github</a>
+				</div>
+			</div>
+			<div>
+				<img src="images/mongo.png" alt="" />
+				<div class="cardb">
+					<h4>Ristorante ConFusion</h4>
+					<p>Mongodb REST API backend for Ristorante ConFusion project frontend.</p>
+					<a href="https://github.com/GouthamSurendran/Express-MongoDB-Mongoose">Go to Github</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="slider-dots">
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://use.fontawesome.com/8a1f4f3931.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="./dist/Js/all.js">
+	</script>
+	<script>var slider = tns({
+			container: '.slider',
+			items: 1,
+			slideBy: 'page',
+			autoplay: true,
+			autoplayButtonOutput: false,
+			controls: false,
+			navContainer: ".slider-dots",
+			mouseDrag: 'true',
+			loop: 'true',
+			touch: 'true',
+			responsive: {
+				640: {
+					edgePadding: 20,
+					gutter: 20,
+					items: 2
+				},
+				700: {
+					gutter: 30
+				},
+				900: {
+					items: 1
+				}
+
+			}
+		});
+
+		// let x = document.getElementById('left');
+		// x.onclick = () => {
+		// 	slider.goTo('prev');
+		// }
 	</script>
 </body>
 
