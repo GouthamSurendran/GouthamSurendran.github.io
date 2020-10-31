@@ -29,29 +29,63 @@
 	</nav>
 
 	<div class="container">
-		<div class="row slider">
+		<!-- <div class="">
+			<i class="fa fa-chevron-left" id='left'></i>
+		</div> -->
+		<div class="slider">
 			<!-- Slider -->
-			<!-- <div class="column">
-				<i class="fa fa-chevron-left" style="margin: 100px 50px;"></i>
-			</div> -->
-			<div class="column">
-				<img src="images/img-4.jpg" alt="" />
+			<div>
+				<img src="images/demo.png" alt="" />
+				<div class="cardb" id='p1'>
+					<h4>Todo List</h4>
+					<p>Simple todo list with CRUD operations. PostgreSQL for backend</p>
+					<a href="https://github.com/GouthamSurendran/Todo-List-Postgresql-NodeJS" target="none">
+						<!-- <i
+							class="fa fa-github" style="font-size: 1.75em;"></i> -->
+							Go to Github
+						</a>
+				</div>
 			</div>
-			<div class="column">
-				<img src="images/download.png" alt="" />
+			<div>
+				<img src="images/socio.PNG" alt="" />
+				<div class="cardb">
+					<h4>Socio</h4>
+					<p>A Social Network Web app. Created with MeteorJS and Mongodb</p>
+					<a href="https://github.com/GouthamSurendran/Social-Network-App-MeteorJS" target="none">
+							Go to Github
+						</a>
+				</div>
 			</div>
-			<div class="column">
-				<img src="images/js.png" alt="" />
+			<div>
+				<img src="images/space.png" alt="" />
+				<div class="cardb">
+					<h4>Space Invaders</h4>
+					<p>Recreation of the arcade game using Python library Pygame.</p>
+					<a href="https://github.com/GouthamSurendran/Space-Invaders" target="none">
+						Go to Github
+					</a>
+				</div>
 			</div>
-			<div class="column">
-				<img src="images/Slider.jpg" alt="" />
+			<div>
+				<img src="images/reactp.PNG" alt="" />
+				<div class="cardb">
+					<h4>Responsive layout using React</h4>
+					<p>Created using ReactJS and React Hooks for state management</p>
+					<a href="https://responsive-react-layout.netlify.app/" target="none">
+						See Live Preview
+					</a>
+					<br></br>
+					<a href="https://github.com/GouthamSurendran/React-Hooks-and-Styling-Template">Go to Github</a>
+				</div>
 			</div>
-			<div class="column">
-				<img src="images/img-7.jpg" alt="" />
+			<div>
+				<img src="images/mongo.png" alt="" />
+				<div class="cardb">
+					<h4>Ristorante ConFusion</h4>
+					<p>Mongodb REST API backend for Ristorante ConFusion project frontend.</p>
+					<a href="https://github.com/GouthamSurendran/Express-MongoDB-Mongoose">Go to Github</a>
+				</div>
 			</div>
-			<!-- <div class="column">
-				<i class="fa fa-chevron-right" style="margin: 100px 50px;"></i>
-			</div> -->
 		</div>
 		<div class="row">
 			<div class="slider-dots">
@@ -74,11 +108,11 @@
 			slideBy: 'page',
 			autoplay: true,
 			autoplayButtonOutput: false,
-			loop: false,
 			controls: false,
 			navContainer: ".slider-dots",
 			mouseDrag: 'true',
 			loop: 'true',
+			touch: 'true',
 			responsive: {
 				640: {
 					edgePadding: 20,
@@ -89,11 +123,16 @@
 					gutter: 30
 				},
 				900: {
-					items: 2
+					items: 1
 				}
 
 			}
 		});
+
+		// let x = document.getElementById('left');
+		// x.onclick = () => {
+		// 	slider.goTo('prev');
+		// }
 	</script>
 </body>
 

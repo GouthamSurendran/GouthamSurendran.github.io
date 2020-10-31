@@ -1,27 +1,53 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgba(24, 23, 23, 0.678);
+}
+
 .container {
-    padding-top: 20%;
+    padding-top: 12.5%;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 img {
     height: 250px;
-    width: 250px; 
-    border-radius: 10px;
+    width: 300px;
+    object-fit: scale-down; 
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 2px rgba(38, 44, 46, 0.253);
 }
-img:hover {
-    transform: scale(1.1);
-}
-.row {
-    display: flex;
-    justify-content: center;
+img:hover + .cardb{
+  box-shadow: 0px 5px 15px rgba(147, 201, 224, 0.9);
 }
 
-h2 {
-    text-align: center;
-    padding-bottom: 1em;
+a{
+  color: #2498EB;
+  text-decoration: none;
 }
 
+a:hover {
+  color: #1e80c7;
+} 
+
+.cardb {
+  width: 285px;
+  padding: 5px 10px;
+  margin: 1px auto;
+  margin-top: -3px;
+  z-index: 999;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 1px 1px 2px rgba(38, 44, 46, 0.253);
+}
+
+.cardb:hover {
+  box-shadow: 0px 5px 15px rgba(147, 201, 224, 0.9);
+}
+
+.slider {
+  display: inherit;
+  position: relative;
+}
 .slider-dots button {
     margin-top: 30px;
     cursor: pointer;
@@ -45,3 +71,14 @@ h2 {
     height: 24px;
     border-radius: 12px;
   }
+
+
+  @media screen and (max-width: 620px) {
+    
+    .slider {
+      margin-top: 50px;
+    }
+  }
+
+
+  
