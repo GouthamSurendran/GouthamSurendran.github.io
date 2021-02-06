@@ -3,18 +3,28 @@ body {
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+#abButton {
+ color: #2498EB;
+}
+
+#abButton:hover {
+  color: #1c85d1;
+}
 
 .hero {
   /* background: url("../images/Slider.jpg") center/cover no-repeat; */
   color: rgba(255, 255, 255, 0.705);
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   object-fit: contain;
-  margin-bottom: 100px;
 }
 
 video {
@@ -23,6 +33,18 @@ video {
     height: 100%;
     position: fixed;
     z-index: -1;
+}
+.bsection {
+  height: 150px;
+  padding: 0px 50px;
+  padding-top: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#connect {
+  display: flex;justify-content: center;
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1{
@@ -141,7 +163,7 @@ h1{
 .heroButton:hover {
   transform: scale(1.05);
   background-color: antiquewhite;
-  color: rgba(0, 0, 0, 0.514);
+  color: rgba(0, 0, 0, 0.719);
   transition: all 0.8s;
   
 }
@@ -274,6 +296,18 @@ h1{
     }
     .navMenu {
         display: block;
+    }
+
+    .bsection {
+      height: 50px;
+      margin-bottom: 100px;
+      padding: 0px 30px;
+      padding-bottom: 90px;
+      font-size: 17px;
+    }
+
+    .hero{
+      padding: 0px;
     }
 
     .effect1 {
